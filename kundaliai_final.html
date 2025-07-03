@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kundaliai - AI-Powered Vedic Astrology</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9f6f1;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(90deg, #6b4eff, #9e63ff);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+    }
+    .cta-button {
+      margin-top: 1.5rem;
+      display: inline-block;
+      background-color: white;
+      color: #6b4eff;
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav {
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #6b4eff;
+      font-weight: 600;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      font-size: 2rem;
+      color: #6b4eff;
+      margin-bottom: 1rem;
+    }
+    .features, .plans {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    footer {
+      background: #eee;
+      padding: 2rem;
+      text-align: center;
+      color: #777;
+      margin-top: 3rem;
+    }
+    .why-choose {
+      margin-top: 3rem;
+    }
+    .why-choose ul {
+      margin-top: 1rem;
+      padding-left: 1.5rem;
+    }
+    .why-choose li {
+      margin-bottom: 0.5rem;
+    }
+    .credit-line {
+      font-size: 0.8rem;
+      margin-top: 1rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kundaliai</h1>
+    <p>Your AI-Powered Guide to Vedic Astrology</p>
+    <a href="#" class="cta-button">Ask the AI Astrologer</a>
+  </header>
+
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#plans">Pricing</a>
+    <a href="#support">Support</a>
+  </nav>
+
+  <section class="section" id="features">
+    <h2>Key Features</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Personalized Predictions</h3>
+        <p>Receive insights about your health, career, relationships, and spiritual growth using your exact birth details.</p>
+      </div>
+      <div class="card">
+        <h3>Kundali Matching</h3>
+        <p>Compare two charts with traditional Guna Milan and AI-based compatibility scoring for relationships.</p>
+      </div>
+      <div class="card">
+        <h3>Event Timings</h3>
+        <p>Find the most auspicious times for key events like weddings, investments, and travel.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="how-it-works">
+    <h2>How It Works</h2>
+    <p>Enter your date, time, and place of birth. Our AI blends traditional astrology with machine learning to generate accurate charts and insights. You can download reports, update your profile, and access everything through our mobile app.</p>
+  </section>
+
+  <section class="section why-choose">
+    <h2>Why Choose Kundaliai?</h2>
+    <ul>
+      <li>✅ Blends 5000+ years of Vedic tradition with modern AI</li>
+      <li>✅ Personalized and private reports</li>
+      <li>✅ Designed for love, career, and personal growth</li>
+    </ul>
+  </section>
+
+  <section class="section" id="plans">
+    <h2>Pricing Plans</h2>
+    <div class="plans">
+      <div class="card">
+        <h3>Free Tier</h3>
+        <p>1 Kundali & basic life overview</p>
+      </div>
+      <div class="card">
+        <h3>Pro Plan</h3>
+        <p>Unlimited charts, detailed predictions, matchmaking & PDF export</p>
+      </div>
+      <div class="card">
+        <h3>Enterprise</h3>
+        <p>API access, custom branding, and premium support for high-scale usage</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="support">
+    <h2>Need Help?</h2>
+    <p>We're here for you 24/7 via live chat and email. You can also book a session with a certified astrologer for personalized advice.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kundaliai. All rights reserved.</p>
+    <p class="credit-line">Built by Vinay — Full-stack AI Automation Expert. Powered by n8n, Pinecone, and OpenAI.</p>
+  </footer>
+
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+      webhookUrl: 'https://4e5a-103-76-139-152.ngrok-free.app/webhook/cc929590-5f58-42e2-93e8-f873f3cdff0c/chat'
+    });
+  </script>
+</body>
+</html>
